@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    tools:context=".MainActivity">
+
+    <!--input codigo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código"/>
+
+        <EditText
+            android:id="@+id/et_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ingrese codigo"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <!--        input descripcion-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion"/>
+
+        <EditText
+            android:id="@+id/et_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ingrese descripcion"/>
+
+    </LinearLayout>
+
+    <!--        input texto-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio"/>
+
+        <EditText
+            android:id="@+id/et_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ingrese precio"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="Registrar"/>
+
+        <Button
+            android:id="@+id/btn_actualizar"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_eliminar"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"/>
+
+        <Button
+            android:id="@+id/btn_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:text="Buscar"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
